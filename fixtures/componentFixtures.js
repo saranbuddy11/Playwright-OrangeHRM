@@ -1,10 +1,10 @@
-import { test as base } from "./dataFixtures.js";
-import { Header } from "../components/Header.js";
+import { test as base, expect } from "./appFixtures.js";
+import { HeaderComponent } from "../components/HeaderComponent.js";
 
 export const test = base.extend({
     header: async ({ page }, use) => {
-        await use(new Header(page));
+        await use(new HeaderComponent(page));
     }
 });
 
-export { expect } from "./dataFixtures.js";
+export { expect };

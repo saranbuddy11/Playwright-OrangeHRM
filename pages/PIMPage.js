@@ -1,5 +1,6 @@
 import { expect } from "@playwright/test";
 import { BasePage } from "./BasePage.js";
+import { HeaderComponent } from "../components/HeaderComponent.js";
 
 export class PIMPage extends BasePage {
     constructor(page) {

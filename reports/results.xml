@@ -1,0 +1,44 @@
+<testsuites id="" name="" tests="5" failures="0" skipped="0" errors="0" time="26.525115999999997">
+<testsuite name="advanced-assignment.spec.js" timestamp="2026-08-04T05:33:02.422Z" hostname="chromium" tests="5" failures="0" skipped="0" time="94.243" errors="0">
+<testcase name="OrangeHRM advanced assignment suite @smoke @regression › smoke: login form loads with authenticated fixture" classname="advanced-assignment.spec.js" time="23.042">
+<properties>
+<property name="priority" value="high">
+</property>
+<property name="category" value="smoke">
+</property>
+</properties>
+</testcase>
+<testcase name="OrangeHRM advanced assignment suite @smoke @regression › regression: network interception for dashboard API" classname="advanced-assignment.spec.js" time="14.606">
+<properties>
+<property name="priority" value="high">
+</property>
+<property name="category" value="regression">
+</property>
+</properties>
+</testcase>
+<testcase name="OrangeHRM advanced assignment suite @smoke @regression › integration: offline scenario handling" classname="advanced-assignment.spec.js" time="18.864">
+<properties>
+<property name="priority" value="medium">
+</property>
+<property name="category" value="integration">
+</property>
+</properties>
+</testcase>
+<testcase name="OrangeHRM advanced assignment suite @smoke @regression › visual: login page snapshot" classname="advanced-assignment.spec.js" time="15.841">
+<properties>
+<property name="priority" value="high">
+</property>
+<property name="category" value="visual">
+</property>
+</properties>
+</testcase>
+<testcase name="OrangeHRM advanced assignment suite @smoke @regression › accessibility: aria snapshot" classname="advanced-assignment.spec.js" time="21.89">
+<properties>
+<property name="priority" value="medium">
+</property>
+<property name="category" value="accessibility">
+</property>
+</properties>
+</testcase>
+</testsuite>
+</testsuites>

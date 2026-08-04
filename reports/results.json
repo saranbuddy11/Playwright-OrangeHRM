@@ -1,0 +1,406 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\karthik01\\Downloads\\PlaywrightWithJavascriptTraining\\Playwright-OrangeHRM\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/advanced-assignment.spec.js",
+      "--project=chromium",
+      "--update-snapshots"
+    ],
+    "configFile": "C:\\Users\\karthik01\\Downloads\\PlaywrightWithJavascriptTraining\\Playwright-OrangeHRM\\playwright.config.js",
+    "rootDir": "C:/Users/karthik01/Downloads/PlaywrightWithJavascriptTraining/Playwright-OrangeHRM/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": "C:\\Users\\karthik01\\Downloads\\PlaywrightWithJavascriptTraining\\Playwright-OrangeHRM\\global-setup.js",
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 5
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/karthik01/Downloads/PlaywrightWithJavascriptTraining/Playwright-OrangeHRM/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 5
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/karthik01/Downloads/PlaywrightWithJavascriptTraining/Playwright-OrangeHRM/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 45000
+      },
+      {
+        "outputDir": "C:/Users/karthik01/Downloads/PlaywrightWithJavascriptTraining/Playwright-OrangeHRM/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 5
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/karthik01/Downloads/PlaywrightWithJavascriptTraining/Playwright-OrangeHRM/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 45000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report",
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/results.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "reports/results.xml"
+        }
+      ],
+      [
+        "list",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "changed",
+    "updateSourceMethod": "patch",
+    "version": "1.61.1",
+    "workers": 7,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "advanced-assignment.spec.js",
+      "file": "advanced-assignment.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "OrangeHRM advanced assignment suite @smoke @regression",
+          "file": "advanced-assignment.spec.js",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "smoke: login form loads with authenticated fixture",
+              "ok": true,
+              "tags": [
+                "smoke",
+                "regression",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [
+                    {
+                      "type": "priority",
+                      "description": "high"
+                    },
+                    {
+                      "type": "category",
+                      "description": "smoke"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 23042,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-04T05:33:03.539Z",
+                      "annotations": [
+                        {
+                          "type": "priority",
+                          "description": "high"
+                        },
+                        {
+                          "type": "category",
+                          "description": "smoke"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7948b637bb09354eb975-019fd03c754d5f943863",
+              "file": "advanced-assignment.spec.js",
+              "line": 17,
+              "column": 3
+            },
+            {
+              "title": "regression: network interception for dashboard API",
+              "ok": true,
+              "tags": [
+                "smoke",
+                "regression",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [
+                    {
+                      "type": "priority",
+                      "description": "high"
+                    },
+                    {
+                      "type": "category",
+                      "description": "regression"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 14606,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-04T05:33:03.570Z",
+                      "annotations": [
+                        {
+                          "type": "priority",
+                          "description": "high"
+                        },
+                        {
+                          "type": "category",
+                          "description": "regression"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7948b637bb09354eb975-6985bcae955c13683d91",
+              "file": "advanced-assignment.spec.js",
+              "line": 24,
+              "column": 3
+            },
+            {
+              "title": "integration: offline scenario handling",
+              "ok": true,
+              "tags": [
+                "smoke",
+                "regression",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [
+                    {
+                      "type": "priority",
+                      "description": "medium"
+                    },
+                    {
+                      "type": "category",
+                      "description": "integration"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 18864,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-04T05:33:03.540Z",
+                      "annotations": [
+                        {
+                          "type": "priority",
+                          "description": "medium"
+                        },
+                        {
+                          "type": "category",
+                          "description": "integration"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7948b637bb09354eb975-a46166631a54a4335986",
+              "file": "advanced-assignment.spec.js",
+              "line": 41,
+              "column": 3
+            },
+            {
+              "title": "visual: login page snapshot",
+              "ok": true,
+              "tags": [
+                "smoke",
+                "regression",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [
+                    {
+                      "type": "priority",
+                      "description": "high"
+                    },
+                    {
+                      "type": "category",
+                      "description": "visual"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 15841,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-04T05:33:03.538Z",
+                      "annotations": [
+                        {
+                          "type": "priority",
+                          "description": "high"
+                        },
+                        {
+                          "type": "category",
+                          "description": "visual"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7948b637bb09354eb975-85fd3a0425c4e67dcb0a",
+              "file": "advanced-assignment.spec.js",
+              "line": 51,
+              "column": 3
+            },
+            {
+              "title": "accessibility: aria snapshot",
+              "ok": true,
+              "tags": [
+                "smoke",
+                "regression",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [
+                    {
+                      "type": "priority",
+                      "description": "medium"
+                    },
+                    {
+                      "type": "category",
+                      "description": "accessibility"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 21890,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-04T05:33:03.618Z",
+                      "annotations": [
+                        {
+                          "type": "priority",
+                          "description": "medium"
+                        },
+                        {
+                          "type": "category",
+                          "description": "accessibility"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7948b637bb09354eb975-e3cc96f8b80ac43406f5",
+              "file": "advanced-assignment.spec.js",
+              "line": 58,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-08-04T05:33:02.260Z",
+    "duration": 26525.115999999998,
+    "expected": 5,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
