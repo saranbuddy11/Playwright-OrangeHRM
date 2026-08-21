@@ -1,4 +1,4 @@
-# OrangeHRM Playwright Automation
+# OrangeHRM Playwright Automation with CICD Pipeline
 
 ## Features
 
