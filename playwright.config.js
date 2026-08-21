@@ -7,6 +7,7 @@ export default defineConfig({
   testDir: './tests',
   timeout: 45000,
   fullyParallel: true,
+  workers: process.env.CI ? 2 : undefined,
   retries: 1,
   globalSetup: './global-setup.js',
   reporter: [

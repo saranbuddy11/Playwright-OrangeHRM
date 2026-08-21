@@ -25,6 +25,12 @@ pipeline {
             choices: ['all', 'smoke', 'regression'],
             description: 'Test suite to execute'
         )
+ 
+        choice(
+        name: 'WORKERS',
+        choices: ['1','2','4'],
+        description: 'Playwright workers'
+        )
     }
 
     stages {
@@ -67,7 +73,7 @@ pipeline {
                         "HEADLESS=${params.HEADLESS}"
                     ]) {
                         bat """
-                            call npx playwright test ${browserArg} ${suiteArg}
+                            call npx playwright test ${browserArg} ${suiteArg} --workers=${params.WORKERS}
                         """
                     }
                 }
