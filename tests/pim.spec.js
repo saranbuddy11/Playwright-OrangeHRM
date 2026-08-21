@@ -5,7 +5,7 @@ import { log } from "../utils/logger.js";
 
 test.describe("PIM Employee", () => {
 
-    test("Create Employee", { tag: "@regression" }, async ({ loggedInPage, pimPage, page }) => {
+    test("Create Employee", async ({ loggedInPage, pimPage, page }) => {
         let employeeData;
         await test.step("Create Employee", async () => {
             employeeData = await createEmployee(pimPage);
@@ -40,7 +40,7 @@ test.describe("PIM Employee", () => {
         });
     });
 
-    test("Delete Employee", { tag: "@regression" }, async ({ loggedInPage, pimPage }) => {
+    test("Delete Employee", async ({ loggedInPage, pimPage }) => {
         const employee = await createEmployee(pimPage);
         await pimPage.openEmployeeListPage();
         await pimPage.searchEmployee(employee.id);

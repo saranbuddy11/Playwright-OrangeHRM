@@ -17,8 +17,8 @@ test.describe('OrangeHRM advanced assignment suite @smoke @regression', { tag: '
   test('smoke: login form loads with authenticated fixture', async ({ authenticatedUser, page }, testInfo) => {
     testInfo.annotations.push({ type: 'priority', description: 'high' });
     testInfo.annotations.push({ type: 'category', description: 'smoke' });
-    await expect(page.locator('input[name="username"]')).toBeVisible();
-    await expect(page.locator('input[name="password"]')).toBeVisible();
+    await expect(page).toHaveURL(/dashboard/);
+    await expect(page.getByRole('heading', { name: 'Dashboard' })).toBeVisible();
   });
 
   test('regression: network interception for dashboard API', async ({ page }, testInfo) => {

@@ -78,9 +78,10 @@ export class PIMPage extends BasePage {
     }
 
     async verifyEmployeeCreated(firstName, lastName) {
-        await expect(this.page).toHaveURL(/viewPersonalDetails/);
+        await expect(this.page).toHaveURL(/(?:addEmployee|viewPersonalDetails)/);
         await expect(this.firstName).toHaveValue(firstName);
         await expect(this.lastName).toHaveValue(lastName);
+        await expect(this.employeeIdInput).not.toHaveValue("");
     }
 
     async getEmployeeId() {

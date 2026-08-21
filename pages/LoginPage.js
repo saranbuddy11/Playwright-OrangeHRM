@@ -23,7 +23,8 @@ export class LoginPage extends BasePage {
     }
 
     async goto() {
-        await this.page.goto("/");
+        await this.page.goto("/", { waitUntil: "domcontentloaded" });
+        await this.username.waitFor({ state: "visible" });
     }
 
     async login(username, password) {

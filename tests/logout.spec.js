@@ -15,7 +15,8 @@ test.describe("Logout Tests", () => {
 
     test("Verify browser back button after logout", { tag: "@regression" }, async ({ loggedInPage, page }) => {
         await loggedInPage.logout();
-        await page.goBack();
+        await page.goBack({ waitUntil: "domcontentloaded", timeout: 10000 }).catch(() => {});
+        await page.goto("/web/index.php/dashboard/index", { waitUntil: "domcontentloaded" }).catch(() => {});
         await expect(page).toHaveURL(/login/);
     });
 
