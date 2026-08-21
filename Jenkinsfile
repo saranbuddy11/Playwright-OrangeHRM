@@ -74,4 +74,37 @@ pipeline {
             }
         }
     }
+
+    post {
+
+    always {
+
+        junit(
+            testResults: 'reports/results.xml',
+            allowEmptyResults: true
+        )
+
+        archiveArtifacts(
+            artifacts: 'playwright-report/**/*,reports/**/*',
+            allowEmptyArchive: true
+        )
+
+        publishHTML([
+        allowMissing: true,
+        alwaysLinkToLastBuild: true,
+        keepAll: true,
+        reportDir: 'playwright-report',
+        reportFiles: 'index.html',
+        reportName: 'Playwright HTML Report'
+        ])
+    }
+
+    success {
+        echo 'Playwright execution completed successfully.'
+    }
+
+    failure {
+        echo 'Playwright execution failed. Review report and archived artifacts.'
+    }
+}
 }
