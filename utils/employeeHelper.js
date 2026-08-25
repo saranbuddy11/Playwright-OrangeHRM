@@ -14,11 +14,13 @@ export async function createEmployee(pimPage, employee = generateEmployee()) {
         employee.middleName,
         employee.lastName
     );
+
     await pimPage.saveEmployee();
     await pimPage.verifyEmployeeCreated(
         employee.firstName,
         employee.lastName
     );
+    
     employee.id = await pimPage.getEmployeeId();
     console.log(`Created Employee -> ${employee.id} | ${employee.firstName} ${employee.lastName}`);
     return employee;
