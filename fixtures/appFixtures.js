@@ -19,12 +19,10 @@ export const test = base.extend({
         await use(new HeaderComponent(page));
     },
 
-    authenticatedUser: async ({ loginPage }, use) => {
-        await loginPage.goto();
-        await loginPage.login(USERS.admin.username, USERS.admin.password);
-        await loginPage.page.waitForLoadState('domcontentloaded');
-        await loginPage.page.locator('body').waitFor();
-        await use(loginPage);
+    authenticatedUser: async ({ page }, use) => {
+        await page.goto("/web/index.php/dashboard/index");
+        await expect(page).toHaveURL(/dashboard/);
+        await use(page);
     },
 
     loggedInPage: async ({ authenticatedUser }, use) => {

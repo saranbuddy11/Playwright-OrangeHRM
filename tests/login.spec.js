@@ -1,6 +1,13 @@
 import { test } from "../fixtures/appFixtures.js";
 import { USERS } from "../config/testConfig.js";
 
+test.use({
+    storageState: {
+        cookies: [],
+        origins: []
+    }
+});
+
 test.describe("OrangeHRM Login Tests", () => {
 
     test("Verify user can login with valid credentials", { tag: "@smoke" }, async ({ loginPage }) => {

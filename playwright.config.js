@@ -10,6 +10,7 @@ export default defineConfig({
   workers: process.env.CI ? 2 : undefined,
   retries: 1,
   globalSetup: './global-setup.js',
+  globalTeardown: './global-teardown.js',
   reporter: [
     ['html', { outputFolder: 'playwright-report', open: 'never' }],
     ['json', { outputFile: 'reports/results.json' }],
@@ -25,14 +26,27 @@ export default defineConfig({
     actionTimeout: 15000,
     navigationTimeout: 30000
   },
+
   projects: [
     {
-      name: 'chromium',
-      use: { ...devices['Desktop Chrome'] }
+      name: "setup",
+      testMatch: /.*\.setup\.js/
     },
     {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] }
+      name: "chromium",
+      use: {
+        ...devices["Desktop Chrome"],
+        storageState: "auth/admin.json"
+      },
+      dependencies: ["setup"]
+    },
+    {
+      name: "firefox",
+      use: {
+        ...devices["Desktop Firefox"],
+        storageState: "auth/admin.json"
+      },
+      dependencies: ["setup"]
     }
   ]
 });

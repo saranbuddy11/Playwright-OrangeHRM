@@ -1,44 +1,1123 @@
-<testsuites id="" name="" tests="5" failures="0" skipped="0" errors="0" time="26.525115999999997">
-<testsuite name="advanced-assignment.spec.js" timestamp="2026-08-04T05:33:02.422Z" hostname="chromium" tests="5" failures="0" skipped="0" time="94.243" errors="0">
-<testcase name="OrangeHRM advanced assignment suite @smoke @regression › smoke: login form loads with authenticated fixture" classname="advanced-assignment.spec.js" time="23.042">
-<properties>
-<property name="priority" value="high">
-</property>
-<property name="category" value="smoke">
-</property>
-</properties>
+<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="15.469634">
+<testsuite name="auth.setup.js" timestamp="2026-08-27T12:14:30.194Z" hostname="setup" tests="1" failures="0" skipped="0" time="7.529" errors="0">
+<testcase name="Authenticate Admin" classname="auth.setup.js" time="7.529">
 </testcase>
-<testcase name="OrangeHRM advanced assignment suite @smoke @regression › regression: network interception for dashboard API" classname="advanced-assignment.spec.js" time="14.606">
-<properties>
-<property name="priority" value="high">
-</property>
-<property name="category" value="regression">
-</property>
-</properties>
-</testcase>
-<testcase name="OrangeHRM advanced assignment suite @smoke @regression › integration: offline scenario handling" classname="advanced-assignment.spec.js" time="18.864">
-<properties>
-<property name="priority" value="medium">
-</property>
-<property name="category" value="integration">
-</property>
-</properties>
-</testcase>
-<testcase name="OrangeHRM advanced assignment suite @smoke @regression › visual: login page snapshot" classname="advanced-assignment.spec.js" time="15.841">
-<properties>
-<property name="priority" value="high">
-</property>
-<property name="category" value="visual">
-</property>
-</properties>
-</testcase>
-<testcase name="OrangeHRM advanced assignment suite @smoke @regression › accessibility: aria snapshot" classname="advanced-assignment.spec.js" time="21.89">
-<properties>
-<property name="priority" value="medium">
-</property>
-<property name="category" value="accessibility">
-</property>
-</properties>
+</testsuite>
+<testsuite name="advancedPromises.spec.js" timestamp="2026-08-27T12:14:30.194Z" hostname="chromium" tests="1" failures="0" skipped="0" time="5.356" errors="0">
+<testcase name="Capture employee search API response using Promise.all" classname="advancedPromises.spec.js" time="5.356">
+<system-out>
+<![CDATA[Response URL: https://opensource-demo.orangehrmlive.com/web/index.php/api/v2/pim/employees?limit=50&offset=0&model=detailed&includeEmployees=onlyCurrent&sortField=employee.firstName&sortOrder=ASC
+Response Status: 200
+{
+  "data": [
+    {
+      "empNumber": 128,
+      "lastName": "444444",
+      "firstName": "123445",
+      "middleName": "34",
+      "employeeId": "dfgsjsjdh",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 86,
+      "lastName": "5TlV",
+      "firstName": "99N75",
+      "middleName": "425",
+      "employeeId": "0295",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 104,
+      "lastName": "010Z",
+      "firstName": "A8DCo",
+      "middleName": "4Ys",
+      "employeeId": "0312",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 173,
+      "lastName": "Sanju",
+      "firstName": "Aaroon",
+      "middleName": "",
+      "employeeId": "0376",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 116,
+      "lastName": "Brown",
+      "firstName": "Amelia",
+      "middleName": "",
+      "employeeId": "01715",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 155,
+      "lastName": "t",
+      "firstName": "aniket",
+      "middleName": "t",
+      "employeeId": "0360",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 181,
+      "lastName": "patil",
+      "firstName": "aniket",
+      "middleName": "Ashok",
+      "employeeId": "387",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 163,
+      "lastName": "Tyson",
+      "firstName": "Ash",
+      "middleName": "J",
+      "employeeId": "0367",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 203,
+      "lastName": "AutoL1787832825799",
+      "firstName": "AutoF1787832825799",
+      "middleName": "",
+      "employeeId": "E25799",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 90,
+      "lastName": "ravi",
+      "firstName": "bala",
+      "middleName": "kumar",
+      "employeeId": "0303",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 83,
+      "lastName": "hbfqkhjfqbhbfqkhjfqb",
+      "firstName": "bmrtahvwhibmrtahvwhi",
+      "middleName": "",
+      "employeeId": "0292",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 186,
+      "lastName": "1787832612473",
+      "firstName": "CalibreQA",
+      "middleName": "",
+      "employeeId": "0386",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 113,
+      "lastName": "Carter",
+      "firstName": "Charles",
+      "middleName": "",
+      "employeeId": "0320",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 107,
+      "lastName": "Smith",
+      "firstName": "Charlotte",
+      "middleName": "",
+      "employeeId": "00392",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 158,
+      "lastName": "Mcmillan",
+      "firstName": "Christopher",
+      "middleName": "",
+      "employeeId": "0363",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 196,
+      "lastName": "LastA1787832739592",
+      "firstName": "DataA1787832739592",
+      "middleName": "",
+      "employeeId": "DA39592",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 197,
+      "lastName": "LastB1787832739593",
+      "firstName": "DataB1787832739593",
+      "middleName": "",
+      "employeeId": "DB39593",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 200,
+      "lastName": "LastC1787832793188",
+      "firstName": "DataC1787832793188",
+      "middleName": "",
+      "employeeId": "DC93188",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 180,
+      "lastName": "TestLast01",
+      "firstName": "DataUser01",
+      "middleName": "",
+      "employeeId": "0827120842",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 182,
+      "lastName": "TestLast02",
+      "firstName": "DataUser02",
+      "middleName": "",
+      "employeeId": "0827120918",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 184,
+      "lastName": "TestLast03",
+      "firstName": "DataUser03",
+      "middleName": "",
+      "employeeId": "0827120956",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 188,
+      "lastName": "TestLast04",
+      "firstName": "DataUser04",
+      "middleName": "",
+      "employeeId": "0827121020",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 189,
+      "lastName": "TestLast05",
+      "firstName": "DataUser05",
+      "middleName": "",
+      "employeeId": "0827121046",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 7,
+      "lastName": "Source",
+      "firstName": "Demo",
+      "middleName": "Open",
+      "employeeId": "Test123",
+      "terminationId": null,
+      "jobTitle": {
+        "id": 23,
+        "title": "HR Manager",
+        "isDeleted": false
+      },
+      "subunit": {
+        "id": 13,
+        "name": "Human Resources"
+      },
+      "empStatus": {
+        "id": 3,
+        "name": "Full-Time Permanent"
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 81,
+      "lastName": "ibuvlwtfsfibuvlwtfsf",
+      "firstName": "dhbrukkuzldhbrukkuzl",
+      "middleName": "",
+      "employeeId": "0290",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 85,
+      "lastName": "P",
+      "firstName": "DHINA",
+      "middleName": "KARAN",
+      "employeeId": "0294",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 118,
+      "lastName": "Jones",
+      "firstName": "Emily",
+      "middleName": "",
+      "employeeId": "09557",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 191,
+      "lastName": "Boehm",
+      "firstName": "Eric",
+      "middleName": "",
+      "employeeId": "1787",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 157,
+      "lastName": "LName",
+      "firstName": "FName",
+      "middleName": "Mname",
+      "employeeId": "1235",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 127,
+      "lastName": "ltsxgy",
+      "firstName": "ftdkux",
+      "middleName": "",
+      "employeeId": "ATPValue",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 148,
+      "lastName": "ltwrrt",
+      "firstName": "fthnvn",
+      "middleName": "",
+      "employeeId": "ATPValue",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 147,
+      "lastName": "ltwrrt",
+      "firstName": "fthnvn",
+      "middleName": "",
+      "employeeId": "ATPValue",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 146,
+      "lastName": "ltrhtm",
+      "firstName": "fthyfv",
+      "middleName": "",
+      "employeeId": "ATPValue",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 149,
+      "lastName": "ltpugr",
+      "firstName": "ftioiu",
+      "middleName": "",
+      "employeeId": "ATPValue",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 141,
+      "lastName": "ltpugr",
+      "firstName": "ftioiu",
+      "middleName": "",
+      "employeeId": "ATPValue",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 153,
+      "lastName": "ltpugr",
+      "firstName": "ftioiu",
+      "middleName": "",
+      "employeeId": "ATPValue",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 139,
+      "lastName": "ltpugr",
+      "firstName": "ftioiu",
+      "middleName": "",
+      "employeeId": "ATPValue",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 140,
+      "lastName": "ltdyyf",
+      "firstName": "ftndlm",
+      "middleName": "",
+      "employeeId": "ATPValue",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 145,
+      "lastName": "ltpzkj",
+      "firstName": "ftpjte",
+      "middleName": "",
+      "employeeId": "ATPValue",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 142,
+      "lastName": "ltzbbp",
+      "firstName": "ftyseo",
+      "middleName": "",
+      "employeeId": "ATPValue",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 152,
+      "lastName": "ltzbbp",
+      "firstName": "ftyseo",
+      "middleName": "",
+      "employeeId": "ATPValue",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 151,
+      "lastName": "ltzbbp",
+      "firstName": "ftyseo",
+      "middleName": "",
+      "employeeId": "ATPValue",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 144,
+      "lastName": "ltzbbp",
+      "firstName": "ftyseo",
+      "middleName": "",
+      "employeeId": "ATPValue",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 150,
+      "lastName": "ltzbbp",
+      "firstName": "ftyseo",
+      "middleName": "",
+      "employeeId": "ATPValue",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 143,
+      "lastName": "ltzbbp",
+      "firstName": "ftyseo",
+      "middleName": "",
+      "employeeId": "ATPValue",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 194,
+      "lastName": "FullNameLast",
+      "firstName": "FullNameFirst",
+      "middleName": "",
+      "employeeId": "0827121116",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 204,
+      "lastName": "FullNameLast",
+      "firstName": "FullNameFirst",
+      "middleName": "",
+      "employeeId": "0827121411",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 169,
+      "lastName": "Negm",
+      "firstName": "Hanya",
+      "middleName": "",
+      "employeeId": "0372",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 176,
+      "lastName": "Negm",
+      "firstName": "Hanya",
+      "middleName": "",
+      "employeeId": "0378",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    },
+    {
+      "empNumber": 135,
+      "lastName": "hh",
+      "firstName": "hh",
+      "middleName": "",
+      "employeeId": "0315hh",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": []
+    }
+  ],
+  "meta": {
+    "total": 128
+  },
+  "rels": []
+}
+]]>
+</system-out>
 </testcase>
 </testsuite>
 </testsuites>
