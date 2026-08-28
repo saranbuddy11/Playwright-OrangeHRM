@@ -4,7 +4,7 @@
       "C:\\Program Files\\nodejs\\node.exe",
       "C:\\Users\\karthik01\\Downloads\\PlaywrightWithJavascriptTraining\\Playwright-OrangeHRM\\node_modules\\@playwright\\test\\cli.js",
       "test",
-      "tests/advancedPromises.spec.js",
+      "typescript-practice/login.spec.ts",
       "--project=chromium"
     ],
     "configFile": "C:\\Users\\karthik01\\Downloads\\PlaywrightWithJavascriptTraining\\Playwright-OrangeHRM\\playwright.config.js",
@@ -18,18 +18,14 @@
     "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
-    "metadata": {
-      "actualWorkers": 1
-    },
+    "metadata": {},
     "preserveOutput": "always",
     "projects": [
       {
         "outputDir": "C:/Users/karthik01/Downloads/PlaywrightWithJavascriptTraining/Playwright-OrangeHRM/test-results",
         "repeatEach": 1,
         "retries": 1,
-        "metadata": {
-          "actualWorkers": 1
-        },
+        "metadata": {},
         "id": "setup",
         "name": "setup",
         "testDir": "C:/Users/karthik01/Downloads/PlaywrightWithJavascriptTraining/Playwright-OrangeHRM/tests",
@@ -43,9 +39,7 @@
         "outputDir": "C:/Users/karthik01/Downloads/PlaywrightWithJavascriptTraining/Playwright-OrangeHRM/test-results",
         "repeatEach": 1,
         "retries": 1,
-        "metadata": {
-          "actualWorkers": 1
-        },
+        "metadata": {},
         "id": "chromium",
         "name": "chromium",
         "testDir": "C:/Users/karthik01/Downloads/PlaywrightWithJavascriptTraining/Playwright-OrangeHRM/tests",
@@ -59,9 +53,7 @@
         "outputDir": "C:/Users/karthik01/Downloads/PlaywrightWithJavascriptTraining/Playwright-OrangeHRM/test-results",
         "repeatEach": 1,
         "retries": 1,
-        "metadata": {
-          "actualWorkers": 1
-        },
+        "metadata": {},
         "id": "firefox",
         "name": "firefox",
         "testDir": "C:/Users/karthik01/Downloads/PlaywrightWithJavascriptTraining/Playwright-OrangeHRM/tests",
@@ -110,107 +102,17 @@
     "workers": 7,
     "webServer": null
   },
-  "suites": [
+  "suites": [],
+  "errors": [
     {
-      "title": "auth.setup.js",
-      "file": "auth.setup.js",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Authenticate Admin",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 45000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "setup",
-              "projectName": "setup",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 7529,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-08-27T12:14:30.591Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "f376efe52c54b1a876fd-4ab624b66eb61f33dc5e",
-          "file": "auth.setup.js",
-          "line": 3,
-          "column": 1
-        }
-      ]
-    },
-    {
-      "title": "advancedPromises.spec.js",
-      "file": "advancedPromises.spec.js",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Capture employee search API response using Promise.all",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 45000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 5356,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "Response URL: https://opensource-demo.orangehrmlive.com/web/index.php/api/v2/pim/employees?limit=50&offset=0&model=detailed&includeEmployees=onlyCurrent&sortField=employee.firstName&sortOrder=ASC\n"
-                    },
-                    {
-                      "text": "Response Status: 200\n"
-                    },
-                    {
-                      "text": "{\n  \"data\": [\n    {\n      \"empNumber\": 128,\n      \"lastName\": \"444444\",\n      \"firstName\": \"123445\",\n      \"middleName\": \"34\",\n      \"employeeId\": \"dfgsjsjdh\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 86,\n      \"lastName\": \"5TlV\",\n      \"firstName\": \"99N75\",\n      \"middleName\": \"425\",\n      \"employeeId\": \"0295\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 104,\n      \"lastName\": \"010Z\",\n      \"firstName\": \"A8DCo\",\n      \"middleName\": \"4Ys\",\n      \"employeeId\": \"0312\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 173,\n      \"lastName\": \"Sanju\",\n      \"firstName\": \"Aaroon\",\n      \"middleName\": \"\",\n      \"employeeId\": \"0376\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 116,\n      \"lastName\": \"Brown\",\n      \"firstName\": \"Amelia\",\n      \"middleName\": \"\",\n      \"employeeId\": \"01715\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 155,\n      \"lastName\": \"t\",\n      \"firstName\": \"aniket\",\n      \"middleName\": \"t\",\n      \"employeeId\": \"0360\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 181,\n      \"lastName\": \"patil\",\n      \"firstName\": \"aniket\",\n      \"middleName\": \"Ashok\",\n      \"employeeId\": \"387\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 163,\n      \"lastName\": \"Tyson\",\n      \"firstName\": \"Ash\",\n      \"middleName\": \"J\",\n      \"employeeId\": \"0367\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 203,\n      \"lastName\": \"AutoL1787832825799\",\n      \"firstName\": \"AutoF1787832825799\",\n      \"middleName\": \"\",\n      \"employeeId\": \"E25799\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 90,\n      \"lastName\": \"ravi\",\n      \"firstName\": \"bala\",\n      \"middleName\": \"kumar\",\n      \"employeeId\": \"0303\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 83,\n      \"lastName\": \"hbfqkhjfqbhbfqkhjfqb\",\n      \"firstName\": \"bmrtahvwhibmrtahvwhi\",\n      \"middleName\": \"\",\n      \"employeeId\": \"0292\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 186,\n      \"lastName\": \"1787832612473\",\n      \"firstName\": \"CalibreQA\",\n      \"middleName\": \"\",\n      \"employeeId\": \"0386\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 113,\n      \"lastName\": \"Carter\",\n      \"firstName\": \"Charles\",\n      \"middleName\": \"\",\n      \"employeeId\": \"0320\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 107,\n      \"lastName\": \"Smith\",\n      \"firstName\": \"Charlotte\",\n      \"middleName\": \"\",\n      \"employeeId\": \"00392\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 158,\n      \"lastName\": \"Mcmillan\",\n      \"firstName\": \"Christopher\",\n      \"middleName\": \"\",\n      \"employeeId\": \"0363\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 196,\n      \"lastName\": \"LastA1787832739592\",\n      \"firstName\": \"DataA1787832739592\",\n      \"middleName\": \"\",\n      \"employeeId\": \"DA39592\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 197,\n      \"lastName\": \"LastB1787832739593\",\n      \"firstName\": \"DataB1787832739593\",\n      \"middleName\": \"\",\n      \"employeeId\": \"DB39593\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 200,\n      \"lastName\": \"LastC1787832793188\",\n      \"firstName\": \"DataC1787832793188\",\n      \"middleName\": \"\",\n      \"employeeId\": \"DC93188\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 180,\n      \"lastName\": \"TestLast01\",\n      \"firstName\": \"DataUser01\",\n      \"middleName\": \"\",\n      \"employeeId\": \"0827120842\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 182,\n      \"lastName\": \"TestLast02\",\n      \"firstName\": \"DataUser02\",\n      \"middleName\": \"\",\n      \"employeeId\": \"0827120918\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 184,\n      \"lastName\": \"TestLast03\",\n      \"firstName\": \"DataUser03\",\n      \"middleName\": \"\",\n      \"employeeId\": \"0827120956\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 188,\n      \"lastName\": \"TestLast04\",\n      \"firstName\": \"DataUser04\",\n      \"middleName\": \"\",\n      \"employeeId\": \"0827121020\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 189,\n      \"lastName\": \"TestLast05\",\n      \"firstName\": \"DataUser05\",\n      \"middleName\": \"\",\n      \"employeeId\": \"0827121046\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 7,\n      \"lastName\": \"Source\",\n      \"firstName\": \"Demo\",\n      \"middleName\": \"Open\",\n      \"employeeId\": \"Test123\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": 23,\n        \"title\": \"HR Manager\",\n        \"isDeleted\": false\n      },\n      \"subunit\": {\n        \"id\": 13,\n        \"name\": \"Human Resources\"\n      },\n      \"empStatus\": {\n        \"id\": 3,\n        \"name\": \"Full-Time Permanent\"\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 81,\n      \"lastName\": \"ibuvlwtfsfibuvlwtfsf\",\n      \"firstName\": \"dhbrukkuzldhbrukkuzl\",\n      \"middleName\": \"\",\n      \"employeeId\": \"0290\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 85,\n      \"lastName\": \"P\",\n      \"firstName\": \"DHINA\",\n      \"middleName\": \"KARAN\",\n      \"employeeId\": \"0294\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 118,\n      \"lastName\": \"Jones\",\n      \"firstName\": \"Emily\",\n      \"middleName\": \"\",\n      \"employeeId\": \"09557\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 191,\n      \"lastName\": \"Boehm\",\n      \"firstName\": \"Eric\",\n      \"middleName\": \"\",\n      \"employeeId\": \"1787\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 157,\n      \"lastName\": \"LName\",\n      \"firstName\": \"FName\",\n      \"middleName\": \"Mname\",\n      \"employeeId\": \"1235\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 127,\n      \"lastName\": \"ltsxgy\",\n      \"firstName\": \"ftdkux\",\n      \"middleName\": \"\",\n      \"employeeId\": \"ATPValue\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 148,\n      \"lastName\": \"ltwrrt\",\n      \"firstName\": \"fthnvn\",\n      \"middleName\": \"\",\n      \"employeeId\": \"ATPValue\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 147,\n      \"lastName\": \"ltwrrt\",\n      \"firstName\": \"fthnvn\",\n      \"middleName\": \"\",\n      \"employeeId\": \"ATPValue\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 146,\n      \"lastName\": \"ltrhtm\",\n      \"firstName\": \"fthyfv\",\n      \"middleName\": \"\",\n      \"employeeId\": \"ATPValue\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 149,\n      \"lastName\": \"ltpugr\",\n      \"firstName\": \"ftioiu\",\n      \"middleName\": \"\",\n      \"employeeId\": \"ATPValue\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 141,\n      \"lastName\": \"ltpugr\",\n      \"firstName\": \"ftioiu\",\n      \"middleName\": \"\",\n      \"employeeId\": \"ATPValue\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 153,\n      \"lastName\": \"ltpugr\",\n      \"firstName\": \"ftioiu\",\n      \"middleName\": \"\",\n      \"employeeId\": \"ATPValue\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 139,\n      \"lastName\": \"ltpugr\",\n      \"firstName\": \"ftioiu\",\n      \"middleName\": \"\",\n      \"employeeId\": \"ATPValue\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 140,\n      \"lastName\": \"ltdyyf\",\n      \"firstName\": \"ftndlm\",\n      \"middleName\": \"\",\n      \"employeeId\": \"ATPValue\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 145,\n      \"lastName\": \"ltpzkj\",\n      \"firstName\": \"ftpjte\",\n      \"middleName\": \"\",\n      \"employeeId\": \"ATPValue\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 142,\n      \"lastName\": \"ltzbbp\",\n      \"firstName\": \"ftyseo\",\n      \"middleName\": \"\",\n      \"employeeId\": \"ATPValue\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 152,\n      \"lastName\": \"ltzbbp\",\n      \"firstName\": \"ftyseo\",\n      \"middleName\": \"\",\n      \"employeeId\": \"ATPValue\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 151,\n      \"lastName\": \"ltzbbp\",\n      \"firstName\": \"ftyseo\",\n      \"middleName\": \"\",\n      \"employeeId\": \"ATPValue\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 144,\n      \"lastName\": \"ltzbbp\",\n      \"firstName\": \"ftyseo\",\n      \"middleName\": \"\",\n      \"employeeId\": \"ATPValue\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 150,\n      \"lastName\": \"ltzbbp\",\n      \"firstName\": \"ftyseo\",\n      \"middleName\": \"\",\n      \"employeeId\": \"ATPValue\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 143,\n      \"lastName\": \"ltzbbp\",\n      \"firstName\": \"ftyseo\",\n      \"middleName\": \"\",\n      \"employeeId\": \"ATPValue\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 194,\n      \"lastName\": \"FullNameLast\",\n      \"firstName\": \"FullNameFirst\",\n      \"middleName\": \"\",\n      \"employeeId\": \"0827121116\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 204,\n      \"lastName\": \"FullNameLast\",\n      \"firstName\": \"FullNameFirst\",\n      \"middleName\": \"\",\n      \"employeeId\": \"0827121411\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 169,\n      \"lastName\": \"Negm\",\n      \"firstName\": \"Hanya\",\n      \"middleName\": \"\",\n      \"employeeId\": \"0372\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 176,\n      \"lastName\": \"Negm\",\n      \"firstName\": \"Hanya\",\n      \"middleName\": \"\",\n      \"employeeId\": \"0378\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    },\n    {\n      \"empNumber\": 135,\n      \"lastName\": \"hh\",\n      \"firstName\": \"hh\",\n      \"middleName\": \"\",\n      \"employeeId\": \"0315hh\",\n      \"terminationId\": null,\n      \"jobTitle\": {\n        \"id\": null,\n        \"title\": null,\n        \"isDeleted\": null\n      },\n      \"subunit\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"empStatus\": {\n        \"id\": null,\n        \"name\": null\n      },\n      \"supervisors\": []\n    }\n  ],\n  \"meta\": {\n    \"total\": 128\n  },\n  \"rels\": []\n}\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-08-27T12:14:39.329Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "283714861522ddfb8f26-d2231dbced9c1b4d2972",
-          "file": "advancedPromises.spec.js",
-          "line": 3,
-          "column": 1
-        }
-      ]
+      "message": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments.",
+      "stack": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments."
     }
   ],
-  "errors": [],
   "stats": {
-    "startTime": "2026-08-27T12:14:30.074Z",
-    "duration": 15469.634,
-    "expected": 2,
+    "startTime": "2026-08-28T07:31:12.958Z",
+    "duration": 489.8780000000006,
+    "expected": 0,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
