@@ -1,332 +1,130 @@
-<testsuites id="" name="" tests="71" failures="0" skipped="71" errors="0" time="0.08794900000000007">
-<testsuite name="auth.setup.js" timestamp="2026-09-03T04:02:48.979Z" hostname="setup" tests="1" failures="0" skipped="1" time="0" errors="0">
-<testcase name="Authenticate Admin" classname="auth.setup.js">
-<skipped>
-</skipped>
+<testsuites id="" name="" tests="2" failures="1" skipped="0" errors="0" time="46.326455">
+<testsuite name="auth.setup.js" timestamp="2026-09-03T04:19:54.451Z" hostname="setup" tests="1" failures="0" skipped="0" time="6.391" errors="0">
+<testcase name="Authenticate Admin" classname="auth.setup.js" time="6.391">
 </testcase>
 </testsuite>
-<testsuite name="advanced-assignment.spec.js" timestamp="2026-09-03T04:02:48.979Z" hostname="chromium" tests="5" failures="0" skipped="5" time="0" errors="0">
-<testcase name="OrangeHRM advanced assignment suite @smoke @regression › smoke: login form loads with authenticated fixture" classname="advanced-assignment.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="OrangeHRM advanced assignment suite @smoke @regression › regression: network interception for dashboard API" classname="advanced-assignment.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="OrangeHRM advanced assignment suite @smoke @regression › integration: offline scenario handling" classname="advanced-assignment.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="OrangeHRM advanced assignment suite @smoke @regression › visual: login page snapshot" classname="advanced-assignment.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="OrangeHRM advanced assignment suite @smoke @regression › accessibility: aria snapshot" classname="advanced-assignment.spec.js">
-<skipped>
-</skipped>
-</testcase>
-</testsuite>
-<testsuite name="advancedPromises.spec.js" timestamp="2026-09-03T04:02:48.979Z" hostname="chromium" tests="1" failures="0" skipped="1" time="0" errors="0">
-<testcase name="Advanced Promise handling - UI action, API synchronization and timeout" classname="advancedPromises.spec.js">
-<skipped>
-</skipped>
-</testcase>
-</testsuite>
-<testsuite name="lifecycle-cleanup.spec.js" timestamp="2026-09-03T04:02:48.979Z" hostname="chromium" tests="1" failures="0" skipped="1" time="0" errors="0">
-<testcase name="Lifecycle cleanup and data isolation @regression › regression: employee data is isolated by afterEach cleanup" classname="lifecycle-cleanup.spec.js">
-<skipped>
-</skipped>
-</testcase>
-</testsuite>
-<testsuite name="login.spec.js" timestamp="2026-09-03T04:02:48.979Z" hostname="chromium" tests="6" failures="0" skipped="6" time="0" errors="0">
-<testcase name="OrangeHRM Login Tests › Verify user can login with valid credentials" classname="login.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="OrangeHRM Login Tests › Verify login fails with invalid password" classname="login.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="OrangeHRM Login Tests › Verify login fails with invalid username" classname="login.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="OrangeHRM Login Tests › Verify validation message for empty username" classname="login.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="OrangeHRM Login Tests › Verify validation message for empty password" classname="login.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="OrangeHRM Login Tests › Verify validation messages for empty username and password" classname="login.spec.js">
-<skipped>
-</skipped>
-</testcase>
-</testsuite>
-<testsuite name="logout.spec.js" timestamp="2026-09-03T04:02:48.979Z" hostname="chromium" tests="4" failures="0" skipped="4" time="0" errors="0">
-<testcase name="Logout Tests › Verify user can logout successfully" classname="logout.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="Logout Tests › Verify session expires after logout" classname="logout.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="Logout Tests › Verify browser back button after logout" classname="logout.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="Logout Tests › Logout should not throw error if clicked once" classname="logout.spec.js">
-<skipped>
-</skipped>
-</testcase>
-</testsuite>
-<testsuite name="network-resilience.spec.js" timestamp="2026-09-03T04:02:48.979Z" hostname="chromium" tests="4" failures="0" skipped="4" time="0" errors="0">
-<testcase name="Network interception and resilience @regression @integration › regression: mock and validate dashboard API request" classname="network-resilience.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="Network interception and resilience @regression @integration › integration: simulate API network failure with route.abort" classname="network-resilience.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="Network interception and resilience @regression @integration › integration: client handles delayed API timeout" classname="network-resilience.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="Network interception and resilience @regression @integration › known issue: documents a quarantined network scenario" classname="network-resilience.spec.js">
-<skipped>
-</skipped>
-</testcase>
-</testsuite>
-<testsuite name="pim.spec.js" timestamp="2026-09-03T04:02:48.979Z" hostname="chromium" tests="5" failures="0" skipped="5" time="0" errors="0">
-<testcase name="PIM Employee › Create Employee" classname="pim.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="PIM Employee › Delete Employee" classname="pim.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="PIM Employee › Create Srinivas" classname="pim.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="PIM Employee › Create Arun" classname="pim.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="PIM Employee › Create Vishnu" classname="pim.spec.js">
-<skipped>
-</skipped>
-</testcase>
-</testsuite>
-<testsuite name="popup.spec.js" timestamp="2026-09-03T04:02:48.979Z" hostname="chromium" tests="1" failures="0" skipped="1" time="0" errors="0">
-<testcase name="Handle new tab using Promise.all" classname="popup.spec.js">
-<skipped>
-</skipped>
-</testcase>
-</testsuite>
-<testsuite name="session.spec.js" timestamp="2026-09-03T04:02:48.979Z" hostname="chromium" tests="5" failures="0" skipped="5" time="0" errors="0">
-<testcase name="Verify cookies after login" classname="session.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="Add and verify custom cookie" classname="session.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="Clear cookies and verify" classname="session.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="Set and read session storage" classname="session.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="Read complete session storage" classname="session.spec.js">
-<skipped>
-</skipped>
-</testcase>
-</testsuite>
-<testsuite name="sessionStorage.spec.js" timestamp="2026-09-03T04:02:48.979Z" hostname="chromium" tests="2" failures="0" skipped="2" time="0" errors="0">
-<testcase name="Session Storage Management › Verify saved sessionStorage" classname="sessionStorage.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="Session Storage Management › Restore sessionStorage in new context" classname="sessionStorage.spec.js">
-<skipped>
-</skipped>
-</testcase>
-</testsuite>
-<testsuite name="visual-components.spec.js" timestamp="2026-09-03T04:02:48.979Z" hostname="chromium" tests="1" failures="0" skipped="1" time="0" errors="0">
-<testcase name="Element visual regression @visual @regression › visual: login form element snapshot" classname="visual-components.spec.js">
-<skipped>
-</skipped>
-</testcase>
-</testsuite>
-<testsuite name="advanced-assignment.spec.js" timestamp="2026-09-03T04:02:48.979Z" hostname="firefox" tests="5" failures="0" skipped="5" time="0" errors="0">
-<testcase name="OrangeHRM advanced assignment suite @smoke @regression › smoke: login form loads with authenticated fixture" classname="advanced-assignment.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="OrangeHRM advanced assignment suite @smoke @regression › regression: network interception for dashboard API" classname="advanced-assignment.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="OrangeHRM advanced assignment suite @smoke @regression › integration: offline scenario handling" classname="advanced-assignment.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="OrangeHRM advanced assignment suite @smoke @regression › visual: login page snapshot" classname="advanced-assignment.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="OrangeHRM advanced assignment suite @smoke @regression › accessibility: aria snapshot" classname="advanced-assignment.spec.js">
-<skipped>
-</skipped>
-</testcase>
-</testsuite>
-<testsuite name="advancedPromises.spec.js" timestamp="2026-09-03T04:02:48.979Z" hostname="firefox" tests="1" failures="0" skipped="1" time="0" errors="0">
-<testcase name="Advanced Promise handling - UI action, API synchronization and timeout" classname="advancedPromises.spec.js">
-<skipped>
-</skipped>
-</testcase>
-</testsuite>
-<testsuite name="lifecycle-cleanup.spec.js" timestamp="2026-09-03T04:02:48.979Z" hostname="firefox" tests="1" failures="0" skipped="1" time="0" errors="0">
-<testcase name="Lifecycle cleanup and data isolation @regression › regression: employee data is isolated by afterEach cleanup" classname="lifecycle-cleanup.spec.js">
-<skipped>
-</skipped>
-</testcase>
-</testsuite>
-<testsuite name="login.spec.js" timestamp="2026-09-03T04:02:48.979Z" hostname="firefox" tests="6" failures="0" skipped="6" time="0" errors="0">
-<testcase name="OrangeHRM Login Tests › Verify user can login with valid credentials" classname="login.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="OrangeHRM Login Tests › Verify login fails with invalid password" classname="login.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="OrangeHRM Login Tests › Verify login fails with invalid username" classname="login.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="OrangeHRM Login Tests › Verify validation message for empty username" classname="login.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="OrangeHRM Login Tests › Verify validation message for empty password" classname="login.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="OrangeHRM Login Tests › Verify validation messages for empty username and password" classname="login.spec.js">
-<skipped>
-</skipped>
-</testcase>
-</testsuite>
-<testsuite name="logout.spec.js" timestamp="2026-09-03T04:02:48.979Z" hostname="firefox" tests="4" failures="0" skipped="4" time="0" errors="0">
-<testcase name="Logout Tests › Verify user can logout successfully" classname="logout.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="Logout Tests › Verify session expires after logout" classname="logout.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="Logout Tests › Verify browser back button after logout" classname="logout.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="Logout Tests › Logout should not throw error if clicked once" classname="logout.spec.js">
-<skipped>
-</skipped>
-</testcase>
-</testsuite>
-<testsuite name="network-resilience.spec.js" timestamp="2026-09-03T04:02:48.979Z" hostname="firefox" tests="4" failures="0" skipped="4" time="0" errors="0">
-<testcase name="Network interception and resilience @regression @integration › regression: mock and validate dashboard API request" classname="network-resilience.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="Network interception and resilience @regression @integration › integration: simulate API network failure with route.abort" classname="network-resilience.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="Network interception and resilience @regression @integration › integration: client handles delayed API timeout" classname="network-resilience.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="Network interception and resilience @regression @integration › known issue: documents a quarantined network scenario" classname="network-resilience.spec.js">
-<skipped>
-</skipped>
-</testcase>
-</testsuite>
-<testsuite name="pim.spec.js" timestamp="2026-09-03T04:02:48.979Z" hostname="firefox" tests="5" failures="0" skipped="5" time="0" errors="0">
-<testcase name="PIM Employee › Create Employee" classname="pim.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="PIM Employee › Delete Employee" classname="pim.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="PIM Employee › Create Srinivas" classname="pim.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="PIM Employee › Create Arun" classname="pim.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="PIM Employee › Create Vishnu" classname="pim.spec.js">
-<skipped>
-</skipped>
-</testcase>
-</testsuite>
-<testsuite name="popup.spec.js" timestamp="2026-09-03T04:02:48.979Z" hostname="firefox" tests="1" failures="0" skipped="1" time="0" errors="0">
-<testcase name="Handle new tab using Promise.all" classname="popup.spec.js">
-<skipped>
-</skipped>
-</testcase>
-</testsuite>
-<testsuite name="session.spec.js" timestamp="2026-09-03T04:02:48.979Z" hostname="firefox" tests="5" failures="0" skipped="5" time="0" errors="0">
-<testcase name="Verify cookies after login" classname="session.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="Add and verify custom cookie" classname="session.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="Clear cookies and verify" classname="session.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="Set and read session storage" classname="session.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="Read complete session storage" classname="session.spec.js">
-<skipped>
-</skipped>
-</testcase>
-</testsuite>
-<testsuite name="sessionStorage.spec.js" timestamp="2026-09-03T04:02:48.979Z" hostname="firefox" tests="2" failures="0" skipped="2" time="0" errors="0">
-<testcase name="Session Storage Management › Verify saved sessionStorage" classname="sessionStorage.spec.js">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="Session Storage Management › Restore sessionStorage in new context" classname="sessionStorage.spec.js">
-<skipped>
-</skipped>
-</testcase>
-</testsuite>
-<testsuite name="visual-components.spec.js" timestamp="2026-09-03T04:02:48.979Z" hostname="firefox" tests="1" failures="0" skipped="1" time="0" errors="0">
-<testcase name="Element visual regression @visual @regression › visual: login form element snapshot" classname="visual-components.spec.js">
-<skipped>
-</skipped>
+<testsuite name="visual-components.spec.js" timestamp="2026-09-03T04:19:54.451Z" hostname="firefox" tests="1" failures="1" skipped="0" time="34.301" errors="0">
+<testcase name="Element visual regression @visual @regression › visual: login form element snapshot" classname="visual-components.spec.js" time="34.301">
+<properties>
+<property name="priority" value="high">
+</property>
+<property name="category" value="visual">
+</property>
+</properties>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\visual-components-Element--93528-login-form-element-snapshot-firefox\video.webm]]
+
+[[ATTACHMENT|..\test-results\visual-components-Element--93528-login-form-element-snapshot-firefox\error-context.md]]
+
+[[ATTACHMENT|..\test-results\visual-components-Element--93528-login-form-element-snapshot-firefox\trace.zip]]
+
+[[ATTACHMENT|..\test-results\visual-components-Element--93528-login-form-element-snapshot-firefox-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\visual-components-Element--93528-login-form-element-snapshot-firefox-retry1\video.webm]]
+
+[[ATTACHMENT|..\test-results\visual-components-Element--93528-login-form-element-snapshot-firefox-retry1\error-context.md]]
+
+[[ATTACHMENT|..\test-results\visual-components-Element--93528-login-form-element-snapshot-firefox-retry1\trace.zip]]
+]]>
+</system-out>
+<failure message="expect(locator).toHaveScreenshot(expected) failed" type="expect.toHaveScreenshot">
+<![CDATA[  [firefox] › visual-components.spec.js:12:3 › Element visual regression @visual @regression › visual: login form element snapshot 
+
+    Error: expect(locator).toHaveScreenshot(expected) failed
+
+    Locator: locator('.orangehrm-login-form')
+    Timeout: 5000ms
+      Timeout 5000ms exceeded.
+
+      Snapshot: login-form.png
+
+    Call log:
+      - Expect "toHaveScreenshot(login-form.png)" with timeout 5000ms
+        - generating new stable screenshot expectation
+      - waiting for locator('.orangehrm-login-form')
+        - locator resolved to <div data-v-0af708be="" class="orangehrm-login-form">…</div>
+      - taking element screenshot
+        - disabled all CSS animations
+      - waiting for fonts to load...
+      - Timeout 5000ms exceeded.
+
+
+      16 |     const loginForm = page.locator('.orangehrm-login-form');
+      17 |     await expect(loginForm).toBeVisible();
+    > 18 |     await expect(loginForm).toHaveScreenshot('login-form.png', {
+         |                             ^
+      19 |       animations: 'disabled'
+      20 |     });
+      21 |   });
+        at C:\Users\karthik01\Downloads\PlaywrightWithJavascriptTraining\Playwright-OrangeHRM\tests\visual-components.spec.js:18:29
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\visual-components-Element--93528-login-form-element-snapshot-firefox\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\visual-components-Element--93528-login-form-element-snapshot-firefox\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\visual-components-Element--93528-login-form-element-snapshot-firefox\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\visual-components-Element--93528-login-form-element-snapshot-firefox\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(locator).toHaveScreenshot(expected) failed
+
+    Locator: locator('.orangehrm-login-form')
+    Timeout: 5000ms
+      Timeout 5000ms exceeded.
+
+      Snapshot: login-form.png
+
+    Call log:
+      - Expect "toHaveScreenshot(login-form.png)" with timeout 5000ms
+        - generating new stable screenshot expectation
+      - waiting for locator('.orangehrm-login-form')
+        - locator resolved to <div data-v-0af708be="" class="orangehrm-login-form">…</div>
+      - taking element screenshot
+        - disabled all CSS animations
+      - waiting for fonts to load...
+      - fonts loaded
+      - attempting scroll into view action
+        - waiting for element to be stable
+      - Timeout 5000ms exceeded.
+
+
+      16 |     const loginForm = page.locator('.orangehrm-login-form');
+      17 |     await expect(loginForm).toBeVisible();
+    > 18 |     await expect(loginForm).toHaveScreenshot('login-form.png', {
+         |                             ^
+      19 |       animations: 'disabled'
+      20 |     });
+      21 |   });
+        at C:\Users\karthik01\Downloads\PlaywrightWithJavascriptTraining\Playwright-OrangeHRM\tests\visual-components.spec.js:18:29
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\visual-components-Element--93528-login-form-element-snapshot-firefox-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\visual-components-Element--93528-login-form-element-snapshot-firefox-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\visual-components-Element--93528-login-form-element-snapshot-firefox-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\visual-components-Element--93528-login-form-element-snapshot-firefox-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\visual-components-Element--93528-login-form-element-snapshot-firefox-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
 </testcase>
 </testsuite>
 </testsuites>
