@@ -1,19 +1,18 @@
 {
   "config": {
     "argv": [
-      "C:\\Program Files\\nodejs\\node.exe",
-      "C:\\Users\\karthik01\\Downloads\\PlaywrightWithJavascriptTraining\\Playwright-OrangeHRM\\node_modules\\@playwright\\test\\cli.js",
+      "/opt/nvm/versions/node/v22.16.0/bin/node",
+      "/mnt/data/orangehrm_eval/Playwright-OrangeHRM/node_modules/@playwright/test/cli.js",
       "test",
-      "typescript-practice/login.spec.ts",
-      "--project=chromium"
+      "--list"
     ],
-    "configFile": "C:\\Users\\karthik01\\Downloads\\PlaywrightWithJavascriptTraining\\Playwright-OrangeHRM\\playwright.config.js",
-    "rootDir": "C:/Users/karthik01/Downloads/PlaywrightWithJavascriptTraining/Playwright-OrangeHRM/tests",
+    "configFile": "/mnt/data/orangehrm_eval/Playwright-OrangeHRM/playwright.config.js",
+    "rootDir": "/mnt/data/orangehrm_eval/Playwright-OrangeHRM/tests",
     "failOnFlakyTests": false,
     "forbidOnly": false,
     "fullyParallel": true,
-    "globalSetup": "C:\\Users\\karthik01\\Downloads\\PlaywrightWithJavascriptTraining\\Playwright-OrangeHRM\\global-setup.js",
-    "globalTeardown": "C:\\Users\\karthik01\\Downloads\\PlaywrightWithJavascriptTraining\\Playwright-OrangeHRM\\global-teardown.js",
+    "globalSetup": "/mnt/data/orangehrm_eval/Playwright-OrangeHRM/global-setup.js",
+    "globalTeardown": "/mnt/data/orangehrm_eval/Playwright-OrangeHRM/global-teardown.js",
     "globalTimeout": 0,
     "grep": {},
     "grepInvert": null,
@@ -22,13 +21,13 @@
     "preserveOutput": "always",
     "projects": [
       {
-        "outputDir": "C:/Users/karthik01/Downloads/PlaywrightWithJavascriptTraining/Playwright-OrangeHRM/test-results",
+        "outputDir": "/mnt/data/orangehrm_eval/Playwright-OrangeHRM/test-results",
         "repeatEach": 1,
         "retries": 1,
         "metadata": {},
         "id": "setup",
         "name": "setup",
-        "testDir": "C:/Users/karthik01/Downloads/PlaywrightWithJavascriptTraining/Playwright-OrangeHRM/tests",
+        "testDir": "/mnt/data/orangehrm_eval/Playwright-OrangeHRM/tests",
         "testIgnore": [],
         "testMatch": [
           "/.*\\.setup\\.js/"
@@ -36,13 +35,13 @@
         "timeout": 45000
       },
       {
-        "outputDir": "C:/Users/karthik01/Downloads/PlaywrightWithJavascriptTraining/Playwright-OrangeHRM/test-results",
+        "outputDir": "/mnt/data/orangehrm_eval/Playwright-OrangeHRM/test-results",
         "repeatEach": 1,
         "retries": 1,
         "metadata": {},
         "id": "chromium",
         "name": "chromium",
-        "testDir": "C:/Users/karthik01/Downloads/PlaywrightWithJavascriptTraining/Playwright-OrangeHRM/tests",
+        "testDir": "/mnt/data/orangehrm_eval/Playwright-OrangeHRM/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -50,13 +49,13 @@
         "timeout": 45000
       },
       {
-        "outputDir": "C:/Users/karthik01/Downloads/PlaywrightWithJavascriptTraining/Playwright-OrangeHRM/test-results",
+        "outputDir": "/mnt/data/orangehrm_eval/Playwright-OrangeHRM/test-results",
         "repeatEach": 1,
         "retries": 1,
         "metadata": {},
         "id": "firefox",
         "name": "firefox",
-        "testDir": "C:/Users/karthik01/Downloads/PlaywrightWithJavascriptTraining/Playwright-OrangeHRM/tests",
+        "testDir": "/mnt/data/orangehrm_eval/Playwright-OrangeHRM/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -99,21 +98,1731 @@
     "updateSnapshots": "missing",
     "updateSourceMethod": "patch",
     "version": "1.61.1",
-    "workers": 7,
+    "workers": 2,
     "webServer": null
   },
-  "suites": [],
-  "errors": [
+  "suites": [
     {
-      "message": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments.",
-      "stack": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments."
+      "title": "auth.setup.js",
+      "file": "auth.setup.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Authenticate Admin",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "f376efe52c54b1a876fd-4ab624b66eb61f33dc5e",
+          "file": "auth.setup.js",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "advanced-assignment.spec.js",
+      "file": "advanced-assignment.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "OrangeHRM advanced assignment suite @smoke @regression",
+          "file": "advanced-assignment.spec.js",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "smoke: login form loads with authenticated fixture",
+              "ok": true,
+              "tags": [
+                "smoke",
+                "regression",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7948b637bb09354eb975-019fd03c754d5f943863",
+              "file": "advanced-assignment.spec.js",
+              "line": 17,
+              "column": 3
+            },
+            {
+              "title": "regression: network interception for dashboard API",
+              "ok": true,
+              "tags": [
+                "smoke",
+                "regression",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7948b637bb09354eb975-6985bcae955c13683d91",
+              "file": "advanced-assignment.spec.js",
+              "line": 24,
+              "column": 3
+            },
+            {
+              "title": "integration: offline scenario handling",
+              "ok": true,
+              "tags": [
+                "smoke",
+                "regression",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7948b637bb09354eb975-a46166631a54a4335986",
+              "file": "advanced-assignment.spec.js",
+              "line": 46,
+              "column": 3
+            },
+            {
+              "title": "visual: login page snapshot",
+              "ok": true,
+              "tags": [
+                "smoke",
+                "regression",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7948b637bb09354eb975-85fd3a0425c4e67dcb0a",
+              "file": "advanced-assignment.spec.js",
+              "line": 56,
+              "column": 3
+            },
+            {
+              "title": "accessibility: aria snapshot",
+              "ok": true,
+              "tags": [
+                "smoke",
+                "regression",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7948b637bb09354eb975-e3cc96f8b80ac43406f5",
+              "file": "advanced-assignment.spec.js",
+              "line": 65,
+              "column": 3
+            },
+            {
+              "title": "smoke: login form loads with authenticated fixture",
+              "ok": true,
+              "tags": [
+                "smoke",
+                "regression",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7948b637bb09354eb975-ad00df4c0a308c1d0270",
+              "file": "advanced-assignment.spec.js",
+              "line": 17,
+              "column": 3
+            },
+            {
+              "title": "regression: network interception for dashboard API",
+              "ok": true,
+              "tags": [
+                "smoke",
+                "regression",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7948b637bb09354eb975-41a8f92570d8e2c0acdf",
+              "file": "advanced-assignment.spec.js",
+              "line": 24,
+              "column": 3
+            },
+            {
+              "title": "integration: offline scenario handling",
+              "ok": true,
+              "tags": [
+                "smoke",
+                "regression",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7948b637bb09354eb975-58c7eb2451c4f5e41aea",
+              "file": "advanced-assignment.spec.js",
+              "line": 46,
+              "column": 3
+            },
+            {
+              "title": "visual: login page snapshot",
+              "ok": true,
+              "tags": [
+                "smoke",
+                "regression",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7948b637bb09354eb975-a204ed9f2c4a9e31cab1",
+              "file": "advanced-assignment.spec.js",
+              "line": 56,
+              "column": 3
+            },
+            {
+              "title": "accessibility: aria snapshot",
+              "ok": true,
+              "tags": [
+                "smoke",
+                "regression",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7948b637bb09354eb975-8384cfe932f380498338",
+              "file": "advanced-assignment.spec.js",
+              "line": 65,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "advancedPromises.spec.js",
+      "file": "advancedPromises.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Advanced Promise handling - UI action, API synchronization and timeout",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "283714861522ddfb8f26-5bf227a86591c8b93532",
+          "file": "advancedPromises.spec.js",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "Advanced Promise handling - UI action, API synchronization and timeout",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "283714861522ddfb8f26-62fac17798e1b8a46e99",
+          "file": "advancedPromises.spec.js",
+          "line": 4,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "lifecycle-cleanup.spec.js",
+      "file": "lifecycle-cleanup.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Lifecycle cleanup and data isolation @regression",
+          "file": "lifecycle-cleanup.spec.js",
+          "line": 6,
+          "column": 6,
+          "specs": [
+            {
+              "title": "regression: employee data is isolated by afterEach cleanup",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "54119a6b4530938c7674-17cd2321f4f6d764bf3f",
+              "file": "lifecycle-cleanup.spec.js",
+              "line": 34,
+              "column": 3
+            },
+            {
+              "title": "regression: employee data is isolated by afterEach cleanup",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "54119a6b4530938c7674-670a2c9fed9233c5dd96",
+              "file": "lifecycle-cleanup.spec.js",
+              "line": 34,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "login.spec.js",
+      "file": "login.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "OrangeHRM Login Tests",
+          "file": "login.spec.js",
+          "line": 11,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Verify user can login with valid credentials",
+              "ok": true,
+              "tags": [
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "badc1754af1944f68b2b-8f00e7f6df8630bfe673",
+              "file": "login.spec.js",
+              "line": 13,
+              "column": 5
+            },
+            {
+              "title": "Verify login fails with invalid password",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "badc1754af1944f68b2b-729276777cbcdb1397ae",
+              "file": "login.spec.js",
+              "line": 19,
+              "column": 5
+            },
+            {
+              "title": "Verify login fails with invalid username",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "badc1754af1944f68b2b-0c037ad0e56849783da5",
+              "file": "login.spec.js",
+              "line": 25,
+              "column": 5
+            },
+            {
+              "title": "Verify validation message for empty username",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "badc1754af1944f68b2b-ffff95866c080221cf71",
+              "file": "login.spec.js",
+              "line": 31,
+              "column": 5
+            },
+            {
+              "title": "Verify validation message for empty password",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "badc1754af1944f68b2b-291d3d08f61bef86ad8d",
+              "file": "login.spec.js",
+              "line": 37,
+              "column": 5
+            },
+            {
+              "title": "Verify validation messages for empty username and password",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "badc1754af1944f68b2b-698d19d724b4609405e5",
+              "file": "login.spec.js",
+              "line": 43,
+              "column": 5
+            },
+            {
+              "title": "Verify user can login with valid credentials",
+              "ok": true,
+              "tags": [
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "badc1754af1944f68b2b-74e447c2520ecfee5de0",
+              "file": "login.spec.js",
+              "line": 13,
+              "column": 5
+            },
+            {
+              "title": "Verify login fails with invalid password",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "badc1754af1944f68b2b-40f2f6af8af4fb01e125",
+              "file": "login.spec.js",
+              "line": 19,
+              "column": 5
+            },
+            {
+              "title": "Verify login fails with invalid username",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "badc1754af1944f68b2b-bc2d62fab1d53467022c",
+              "file": "login.spec.js",
+              "line": 25,
+              "column": 5
+            },
+            {
+              "title": "Verify validation message for empty username",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "badc1754af1944f68b2b-9c1c319c857e23841503",
+              "file": "login.spec.js",
+              "line": 31,
+              "column": 5
+            },
+            {
+              "title": "Verify validation message for empty password",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "badc1754af1944f68b2b-329b99c36948e0a68cb5",
+              "file": "login.spec.js",
+              "line": 37,
+              "column": 5
+            },
+            {
+              "title": "Verify validation messages for empty username and password",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "badc1754af1944f68b2b-d9bfc1bdf3ce76987361",
+              "file": "login.spec.js",
+              "line": 43,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "logout.spec.js",
+      "file": "logout.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Logout Tests",
+          "file": "logout.spec.js",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Verify user can logout successfully",
+              "ok": true,
+              "tags": [
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b7773ae6a53e211c23cf-540424f36903202900cb",
+              "file": "logout.spec.js",
+              "line": 5,
+              "column": 5
+            },
+            {
+              "title": "Verify session expires after logout",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b7773ae6a53e211c23cf-664206f23eb9ecc6ae4c",
+              "file": "logout.spec.js",
+              "line": 10,
+              "column": 5
+            },
+            {
+              "title": "Verify browser back button after logout",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b7773ae6a53e211c23cf-42cd315a1439f79bdb84",
+              "file": "logout.spec.js",
+              "line": 16,
+              "column": 5
+            },
+            {
+              "title": "Logout should not throw error if clicked once",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b7773ae6a53e211c23cf-095a63a2b3e926630bb2",
+              "file": "logout.spec.js",
+              "line": 23,
+              "column": 5
+            },
+            {
+              "title": "Verify user can logout successfully",
+              "ok": true,
+              "tags": [
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b7773ae6a53e211c23cf-f7dda17bf9044b2a4c0c",
+              "file": "logout.spec.js",
+              "line": 5,
+              "column": 5
+            },
+            {
+              "title": "Verify session expires after logout",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b7773ae6a53e211c23cf-2af64989c9241b51532a",
+              "file": "logout.spec.js",
+              "line": 10,
+              "column": 5
+            },
+            {
+              "title": "Verify browser back button after logout",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b7773ae6a53e211c23cf-9d9774b4ed4ead393cd5",
+              "file": "logout.spec.js",
+              "line": 16,
+              "column": 5
+            },
+            {
+              "title": "Logout should not throw error if clicked once",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b7773ae6a53e211c23cf-c6c6852ea3faefdec3bc",
+              "file": "logout.spec.js",
+              "line": 23,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "network-resilience.spec.js",
+      "file": "network-resilience.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Network interception and resilience @regression @integration",
+          "file": "network-resilience.spec.js",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "regression: mock and validate dashboard API request",
+              "ok": true,
+              "tags": [
+                "regression",
+                "integration"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c69806769eaa7c79d9da-bcf863549fe6f018ea76",
+              "file": "network-resilience.spec.js",
+              "line": 6,
+              "column": 3
+            },
+            {
+              "title": "integration: simulate API network failure with route.abort",
+              "ok": true,
+              "tags": [
+                "regression",
+                "integration"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c69806769eaa7c79d9da-26863561c441a8b34a26",
+              "file": "network-resilience.spec.js",
+              "line": 33,
+              "column": 3
+            },
+            {
+              "title": "integration: client handles delayed API timeout",
+              "ok": true,
+              "tags": [
+                "regression",
+                "integration"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c69806769eaa7c79d9da-b13947e33e4f1cb3f58d",
+              "file": "network-resilience.spec.js",
+              "line": 52,
+              "column": 3
+            },
+            {
+              "title": "known issue: documents a quarantined network scenario",
+              "ok": true,
+              "tags": [
+                "regression",
+                "integration"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c69806769eaa7c79d9da-18c5969f30f5bc63f73b",
+              "file": "network-resilience.spec.js",
+              "line": 86,
+              "column": 3
+            },
+            {
+              "title": "regression: mock and validate dashboard API request",
+              "ok": true,
+              "tags": [
+                "regression",
+                "integration"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c69806769eaa7c79d9da-ca8054344093902ea963",
+              "file": "network-resilience.spec.js",
+              "line": 6,
+              "column": 3
+            },
+            {
+              "title": "integration: simulate API network failure with route.abort",
+              "ok": true,
+              "tags": [
+                "regression",
+                "integration"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c69806769eaa7c79d9da-9eb3f34d0f87e0bd6afb",
+              "file": "network-resilience.spec.js",
+              "line": 33,
+              "column": 3
+            },
+            {
+              "title": "integration: client handles delayed API timeout",
+              "ok": true,
+              "tags": [
+                "regression",
+                "integration"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c69806769eaa7c79d9da-0b9b75bca369734a254c",
+              "file": "network-resilience.spec.js",
+              "line": 52,
+              "column": 3
+            },
+            {
+              "title": "known issue: documents a quarantined network scenario",
+              "ok": true,
+              "tags": [
+                "regression",
+                "integration"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c69806769eaa7c79d9da-cd964b2437d704be6019",
+              "file": "network-resilience.spec.js",
+              "line": 86,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "pim.spec.js",
+      "file": "pim.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "PIM Employee",
+          "file": "pim.spec.js",
+          "line": 6,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Create Employee",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7e74536579711e2816b6-cfc5aa1a961202be61c0",
+              "file": "pim.spec.js",
+              "line": 8,
+              "column": 5
+            },
+            {
+              "title": "Delete Employee",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7e74536579711e2816b6-35441ed301162c85864c",
+              "file": "pim.spec.js",
+              "line": 43,
+              "column": 5
+            },
+            {
+              "title": "Create Srinivas",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7e74536579711e2816b6-d0533e5f1bbefeb2a352",
+              "file": "pim.spec.js",
+              "line": 55,
+              "column": 9
+            },
+            {
+              "title": "Create Arun",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7e74536579711e2816b6-b64ad624fe0a9044fbc3",
+              "file": "pim.spec.js",
+              "line": 55,
+              "column": 9
+            },
+            {
+              "title": "Create Vishnu",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7e74536579711e2816b6-ef5f13d8c46bffb0197b",
+              "file": "pim.spec.js",
+              "line": 55,
+              "column": 9
+            },
+            {
+              "title": "Create Employee",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7e74536579711e2816b6-c8bd1799a7bfe3804fe9",
+              "file": "pim.spec.js",
+              "line": 8,
+              "column": 5
+            },
+            {
+              "title": "Delete Employee",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7e74536579711e2816b6-9f2481b94bcc765b3b7e",
+              "file": "pim.spec.js",
+              "line": 43,
+              "column": 5
+            },
+            {
+              "title": "Create Srinivas",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7e74536579711e2816b6-03ccd5255eb51e8e5e90",
+              "file": "pim.spec.js",
+              "line": 55,
+              "column": 9
+            },
+            {
+              "title": "Create Arun",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7e74536579711e2816b6-9c996dd89c29276458d9",
+              "file": "pim.spec.js",
+              "line": 55,
+              "column": 9
+            },
+            {
+              "title": "Create Vishnu",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7e74536579711e2816b6-01bb444daab1cc68c3d9",
+              "file": "pim.spec.js",
+              "line": 55,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "popup.spec.js",
+      "file": "popup.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Handle new tab using Promise.all",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "3e762584de9a9210982c-0cb5924e1dc0c140e540",
+          "file": "popup.spec.js",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "Handle new tab using Promise.all",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "3e762584de9a9210982c-8c8d9b920e95494b87ec",
+          "file": "popup.spec.js",
+          "line": 4,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "session.spec.js",
+      "file": "session.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Verify cookies after login",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "adbed42a64022ae295c2-de31c1511062fc815879",
+          "file": "session.spec.js",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "Add and verify custom cookie",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "adbed42a64022ae295c2-c1659ea811e854efa8cd",
+          "file": "session.spec.js",
+          "line": 9,
+          "column": 1
+        },
+        {
+          "title": "Clear cookies and verify",
+          "ok": true,
+          "tags": [
+            "practice"
+          ],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "adbed42a64022ae295c2-723d430febcc7d72eb29",
+          "file": "session.spec.js",
+          "line": 26,
+          "column": 1
+        },
+        {
+          "title": "Set and read session storage",
+          "ok": true,
+          "tags": [
+            "sessionStorage"
+          ],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "adbed42a64022ae295c2-3d2eb445bf75d684c9b3",
+          "file": "session.spec.js",
+          "line": 33,
+          "column": 1
+        },
+        {
+          "title": "Read complete session storage",
+          "ok": true,
+          "tags": [
+            "readSessionStorage"
+          ],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "adbed42a64022ae295c2-0a6541cd8767d76bdd38",
+          "file": "session.spec.js",
+          "line": 41,
+          "column": 1
+        },
+        {
+          "title": "Verify cookies after login",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "adbed42a64022ae295c2-37fa81d6685a7ef04923",
+          "file": "session.spec.js",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "Add and verify custom cookie",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "adbed42a64022ae295c2-356eb77b77168442f252",
+          "file": "session.spec.js",
+          "line": 9,
+          "column": 1
+        },
+        {
+          "title": "Clear cookies and verify",
+          "ok": true,
+          "tags": [
+            "practice"
+          ],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "adbed42a64022ae295c2-455cb1846f082c575371",
+          "file": "session.spec.js",
+          "line": 26,
+          "column": 1
+        },
+        {
+          "title": "Set and read session storage",
+          "ok": true,
+          "tags": [
+            "sessionStorage"
+          ],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "adbed42a64022ae295c2-305e4a07bdc750105224",
+          "file": "session.spec.js",
+          "line": 33,
+          "column": 1
+        },
+        {
+          "title": "Read complete session storage",
+          "ok": true,
+          "tags": [
+            "readSessionStorage"
+          ],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "adbed42a64022ae295c2-c897482a73a6c5fee866",
+          "file": "session.spec.js",
+          "line": 41,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "sessionStorage.spec.js",
+      "file": "sessionStorage.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Session Storage Management",
+          "file": "sessionStorage.spec.js",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Verify saved sessionStorage",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "89d0a29ba14189e408da-39faed165bae9040182d",
+              "file": "sessionStorage.spec.js",
+              "line": 19,
+              "column": 5
+            },
+            {
+              "title": "Restore sessionStorage in new context",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "89d0a29ba14189e408da-bc329dbe44cf55fdbe57",
+              "file": "sessionStorage.spec.js",
+              "line": 25,
+              "column": 5
+            },
+            {
+              "title": "Verify saved sessionStorage",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "89d0a29ba14189e408da-b42ea79000d2d61cddbe",
+              "file": "sessionStorage.spec.js",
+              "line": 19,
+              "column": 5
+            },
+            {
+              "title": "Restore sessionStorage in new context",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "89d0a29ba14189e408da-c03c0c597341a6016a25",
+              "file": "sessionStorage.spec.js",
+              "line": 25,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "visual-components.spec.js",
+      "file": "visual-components.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Element visual regression @visual @regression",
+          "file": "visual-components.spec.js",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "visual: login form element snapshot",
+              "ok": true,
+              "tags": [
+                "visual",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "21427c1e1f96feea2944-16bade77f27baede6737",
+              "file": "visual-components.spec.js",
+              "line": 12,
+              "column": 3
+            },
+            {
+              "title": "visual: login form element snapshot",
+              "ok": true,
+              "tags": [
+                "visual",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "21427c1e1f96feea2944-a68e61118cd84f68da02",
+              "file": "visual-components.spec.js",
+              "line": 12,
+              "column": 3
+            }
+          ]
+        }
+      ]
     }
   ],
+  "errors": [],
   "stats": {
-    "startTime": "2026-08-28T07:31:12.958Z",
-    "duration": 489.8780000000006,
+    "startTime": "2026-09-03T04:02:48.892Z",
+    "duration": 87.94900000000007,
     "expected": 0,
-    "skipped": 0,
+    "skipped": 71,
     "unexpected": 0,
     "flaky": 0
   }
